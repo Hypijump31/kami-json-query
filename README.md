@@ -1,4 +1,4 @@
-﻿# kami-json-query
+# kami-json-query
 
 [![KAMI Plugin](https://img.shields.io/badge/KAMI-plugin-8A2BE2)](https://github.com/Hypijump31/KAMI)
 [![Signed](https://img.shields.io/badge/Ed25519-signed-green)](https://github.com/Hypijump31/kami-registry)
@@ -41,7 +41,13 @@ kami exec dev.kami.json-query '{"action": "flatten", "data": {"a": {"b": {"c": 1
 ```bash
 git clone https://github.com/Hypijump31/kami-json-query
 cd kami-json-query
-cargo build --target wasm32-wasip2 --release
+kami build . --release
+```
+
+To also package as plugin.zip:
+
+```bash
+kami build . --release --package
 ```
 
 ## Security
